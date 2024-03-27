@@ -1,0 +1,42 @@
+.title KiCad schematic
+D3 +5V Net-_D3-Pad2_ SS34
+R8 +5V Net-_R8-Pad2_ 15k
+C3 +5V GND 22uF
+R9 Net-_R8-Pad2_ GND 2k
+J4 +5V GND /TXD /RXD /WAKEUP /RESET S6B-XH-SM4-TB
+C2 Net-_C2-Pad1_ GND 22uF
+TP11 Net-_D3-Pad2_ SIMPLE_PAD_TP
+TP13 +5V SIMPLE_PAD_TP
+J1 VBUS unconnected-_J1-Pad2_ unconnected-_J1-Pad3_ unconnected-_J1-Pad4_ GND Net-_J1-Pad6_ USB_B_Micro
+R1 Net-_J1-Pad6_ GND 0R
+TP1 VBUS 
+Q1 Net-_Q1-Pad1_ Net-_D2-Pad2_ Net-_C2-Pad1_ DMP2045U
+D2 Net-_C2-Pad1_ Net-_D2-Pad2_ SS34
+J3 +BATT GND LiPo
+U2 Net-_D3-Pad2_ GND Net-_R8-Pad2_ Net-_C2-Pad1_ Net-_C2-Pad1_ unconnected-_U2-Pad6_ MT3608
+TP12 Net-_R8-Pad2_ SIMPLE_PAD_TP
+SW1 Net-_D2-Pad2_ VBUS unconnected-_SW1-Pad3_ Net-_Q1-Pad1_ +BATT unconnected-_SW1-Pad6_ PWR
+TP5 +BATT SIMPLE_PAD_TP
+L1 Net-_C2-Pad1_ Net-_D3-Pad2_ 22uH
+TP10 Net-_C2-Pad1_ SIMPLE_PAD_TP
+R3 Net-_D1-Pad1_ Net-_R3-Pad2_ 1k
+D1 Net-_D1-Pad1_ VBUS LED
+U1 Net-_R3-Pad2_ GND +BATT VBUS Net-_R2-Pad1_ MCP73831-2-OT
+SW3 Net-_J2-Pad22_ GND FWD
+SW2 Net-_J2-Pad18_ GND BACK
+SW4 Net-_J2-Pad37_ GND ACTION
+R5 +3.3V Net-_J2-Pad22_ 6k
+R6 +3.3V Net-_J2-Pad37_ 6k
+R4 +3.3V Net-_J2-Pad18_ 6k
+TP2 /TXD SIMPLE_PAD_TP
+TP6 /RXD SIMPLE_PAD_TP
+R7 Net-_D2-Pad2_ GND 100k
+TP3 /WAKEUP SIMPLE_PAD_TP
+TP7 /RESET SIMPLE_PAD_TP
+TP8 Net-_J2-Pad22_ SIMPLE_PAD_TP
+TP4 Net-_J2-Pad18_ SIMPLE_PAD_TP
+TP9 Net-_J2-Pad37_ SIMPLE_PAD_TP
+C1 +BATT GND 10uF
+R2 Net-_R2-Pad1_ GND 4.7k
+J2 +3.3V +5V unconnected-_J2-Pad3_ unconnected-_J2-Pad4_ unconnected-_J2-Pad5_ GND unconnected-_J2-Pad7_ /TXD unconnected-_J2-Pad9_ /RXD unconnected-_J2-Pad11_ unconnected-_J2-Pad12_ unconnected-_J2-Pad13_ unconnected-_J2-Pad14_ /WAKEUP /RESET unconnected-_J2-Pad17_ Net-_J2-Pad18_ unconnected-_J2-Pad19_ unconnected-_J2-Pad20_ unconnected-_J2-Pad21_ Net-_J2-Pad22_ unconnected-_J2-Pad23_ unconnected-_J2-Pad24_ unconnected-_J2-Pad25_ unconnected-_J2-Pad26_ unconnected-_J2-Pad27_ unconnected-_J2-Pad28_ unconnected-_J2-Pad29_ unconnected-_J2-Pad30_ unconnected-_J2-Pad31_ unconnected-_J2-Pad32_ unconnected-_J2-Pad33_ unconnected-_J2-Pad34_ unconnected-_J2-Pad35_ unconnected-_J2-Pad36_ Net-_J2-Pad37_ unconnected-_J2-Pad38_ unconnected-_J2-Pad39_ unconnected-_J2-Pad40_ 2x20_0.1pitch_header_female
+.end

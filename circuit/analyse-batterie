@@ -1,0 +1,27 @@
+Différents cas :
+
+Batterie est déconnectée ou connectée
+USB est déconnecté ou connecté
+
+USB est toujours censé "battre" la batterie niveau tension
+        VBUS = ~ 5 V > VBAT = 4.2 V à 100% de charge
+
+DC-DC doit seulement être actif si USB est déconnecté
+(DC-DC est désactivé si USB présent)
+(DC-DC est actif si VBUS = 0V, inactif si VBUS = 5V
+ EN est logique inverse)
+
+1 - Batterie déconnectée, USB déconnecté
+Rien ne fonctionne. Rien n'est en danger.
+
+2 - Batterie déconnectée, USB connecté
+VBUS alimente Pi et Eink
+MCP73831 deal avec le fait que la batterie soit déconnectée (vérifié dans datasheet)
+
+3 - Batterie connectée, USB déconnecté
+Le DC-DC amène VBATT à VBUS
+
+4 - Batterie connectée, USB connecté
+
+Simulation : 
+http://falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxA2JCQBZtqBTAWjDACgAzEbPG8YlCBrFC-QdnphoSGJBRsASkJHgMo4aNaDIUITprRtumAjYAnZaJR48l7oVs608SGwDmd7A7s04xtgDu3Lxi3F6hrkoSmgJhmoQ6iXrGxtKBdigIoghqIJmirgDy1Ln5IIQofGUQrhY5Vlklothouggurh713K3d0f4eYAl5+ODDKJX+FkM6YDR8MyOO1B1sxYtzVaOb4FDpeLPzY4d8rlxMLccgB1eXUjKw8kpMN4sv+sv6OjKppkEXgjer2GnWus1yNzQn3MYPKfFeR2+qyUN0I8J0lySviEhhSJnSGiWGUariChOstnJJLYPF2ADEatwcYIWCAAGoAIQAggAVGm2JAMlJIVmcgCqAGU2EA

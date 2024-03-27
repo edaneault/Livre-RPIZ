@@ -1,0 +1,47 @@
+Six options faciles :
+        Short BWD
+        Short FWD
+        Short Go
+        Long BWD
+        Long FWD
+        Long Go
+
+Mettre écran en SLEEP le plus souvent possible
+
+
+Power saving :
+If you're running a headless Raspberry Pi, there's no need to power the display circuitry, and you can save a little power by running /usr/bin/tvservice -o (-p to re-enable). Add the line to /etc/rc.local to disable HDMI on boot.
+-> Ne fonctionne pas
+
+Considérer désactiver ACT LED (ou l'utiliser moi-même, OFF par défaut)
+
+
+Faire clignoter ACT "automatiquement" :
+sudo sh -c "echo timer > /sys/class/leds/ACT/trigger"
+sudo sh -c "echo 300 > /sys/class/leds/ACT/delay_on"
+sudo sh -c "echo 300 > /sys/class/leds/ACT/delay_off"
+Éteindre :
+sudo sh -c "echo off > /sys/class/leds/ACT/trigger"
+
+GPIO utilisés :
+        24, 25, 27 (BACK, FWD et GO, respectivement)
+
+Rappels / notes GPIO :
+Echo dans export
+edge peut être configuré avec none/rising/falling/both pour utiliser avec poll(2)
+
+De https://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/: 
+        Threaded callbacks
+
+        RPi.GPIO runs a second thread for callback functions. This means that callback functions can be run at the same time as your main program, in immediate response to an edge. For example:
+
+        def my_callback(channel):
+            print('This is a edge event callback function!')
+            print('Edge detected on channel %s'%channel)
+            print('This is run in a different thread to your main program')
+
+        GPIO.add_event_detect(channel, GPIO.RISING, callback=my_callback)  # add rising edge detection on a channel
+        ...the rest of your program...
+Debounce (même site) :
+        # add rising edge detection on a channel, ignoring further edges for 200ms for switch bounce handling
+        GPIO.add_event_detect(channel, GPIO.RISING, callback=my_callback, bouncetime=200)

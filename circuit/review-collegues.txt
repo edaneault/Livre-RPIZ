@@ -1,0 +1,10 @@
+ABAN    Ajouter zener à la sortie du DC DC pour protéger le RPI. (Max)
+FAIT    Ajouter TVS sur USB? (Max)
+ABAN    Optimiser bobine? (Max)
+FAIT    Changer TXD RXD à PI_TXD/RXD
+FAIT    Ajouter test point sur GND
+FAIT    Vérifier polarité batterie / PST batterie
+FAIT    Ajouter? : VBatt sur ADC pour lire état batterie.
+FAIT    Ajouter? : Status vers GPIO pour savoir si charge. 
+ABAN    Ajouter? : 1-2 Dels de GPIO pour debug.
+FAIT    Ajouter footprint de condensateur pour écran pour prob alim

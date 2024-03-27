@@ -1,0 +1,15 @@
+Côté EINK :
+bleu
+jaune
+vert
+blanc
+noir
+rouge
+
+Côté PCB CUSTOM 
+rouge
+noir
+vert pin 8
+blanc pin 10
+jaune
+bleu

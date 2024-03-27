@@ -1,0 +1,15 @@
+sur batterie :
+JST, série PH, 2 positions
+
+Digikey :
+455-1165-ND
+https://www.digikey.ca/en/products/detail/jst-sales-america-inc/PHR-2/608607?s=N4IgjCBcoBw1oDGUBmBDANgZwKYBoQB7KAbXACYwBmcgNhAF0CAHAFyhAGVWAnASwB2AcxABfUQXKkQAKU4AVAAQAFABKNRQA 
+
+Exemple adafruit :
+https://www.adafruit.com/product/1578 (2e photo en particulier)
+
+
+Connecteur :
+B2B-PH-K-S
+455-1704-ND
+https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B2B-PH-K-S/926611
